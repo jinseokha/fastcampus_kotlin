@@ -30,5 +30,5 @@ fun main(array: Array<String>) {
     var a5 = Array(10, { 0 })
     var a6 = Array(5, {1;2;3;4;5;})
 
-    
+
 }
