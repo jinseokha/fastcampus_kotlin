@@ -27,6 +27,25 @@ fun main(array: Array<String> ) {
     val bigCar1: Car = Car("v8 engine", "big")
 
     val superCar: SuperCar = SuperCar("good engine", "big", "white")
+
+    // 인스턴스가 가지고있는 기능을 사용하는 방법
+    val runnableCar1: RunnableCar = RunnableCar("simple engine", "shot body")
+
+    // RunnableCar.ride() -> 불가능
+    runnableCar1.ride()
+    runnableCar1.navi("부산")
+    runnableCar1.drive()
+
+    // 인스턴스의 멤버 변수에 접근 하는 방법
+    val runnableCar2 : RunnableCar2 = RunnableCar2("nice engine", "long body")
+    println(runnableCar2.body)
+    println(runnableCar2.engine)
+
+    println()
+    val testClass = TestClass()
+    testClass.test(1)
+    testClass.test(2, 3)
+
 }
 
 // 클래스(설명서) 만드는 방법(1)
@@ -81,3 +100,58 @@ class Car2 {
 
 // 2번, 4번 우선 그리고 2번이 1번 어떻게 변형되었는지, 4번이 3번으로 어떻게 변형되었는지
 
+class RunnableCar(engine: String, body: String) {
+
+    fun ride() {
+        println("탑승 하였습니다.")
+    }
+
+    fun drive() {
+        println("달립니다 !")
+    }
+
+    fun navi(destination: String){
+        println("$destination 으로 목적지가 설정되었습니다.")
+    }
+}
+
+class RunnableCar2 {
+    var engine: String
+    var body: String
+
+    constructor(engine: String, body: String) {
+        this.engine = engine
+        this.body = body
+    }
+
+    init { // 무조건 먼저 호출
+        // 초기셋팅 할 때 유용함
+        println("RunnableCar2가 만들어 졌습니다")
+    }
+
+    fun ride() {
+        println("탑승 하였습니다.")
+    }
+
+    fun drive() {
+        println("달립니다 !")
+    }
+
+    fun navi(destination: String){
+        println("$destination 으로 목적지가 설정되었습니다.")
+    }
+}
+
+// 오버로딩
+// -> 이름이 같지만 받는 파라미터가 다른 함수
+class TestClass() {
+
+    fun test(a: Int) {
+        println("up")
+    }
+
+    fun test(a: Int, b: Int) {
+        println("down")
+    }
+    
+}
