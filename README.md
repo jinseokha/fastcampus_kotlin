@@ -2,7 +2,7 @@
 
 #fastcamput_kotlin 
 
-기초 코드 및 강의정리
+code 및 강의정리 (project 미포함)
 
 
-Web Site : https://www.fastcampus.co.kr/dev_online_androidapp
+link : https://www.fastcampus.co.kr/dev_online_androidapp
