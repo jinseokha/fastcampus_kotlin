@@ -53,7 +53,6 @@ class Listener : AppCompatActivity() {
         // 뷰를 조작하는 함수들
         // 1 > setText
         // 2 > setImageResource
-        
 
     }
 }
