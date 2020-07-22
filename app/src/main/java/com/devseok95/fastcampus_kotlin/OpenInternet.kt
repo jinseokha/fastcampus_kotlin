@@ -37,7 +37,7 @@ class OpenInternet : AppCompatActivity() {
                 Log.d("edit", "onTextChanged : " + p0) // 2
             }
         })
-        
+
 
     }
 }
