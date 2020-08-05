@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
-        <activity android:name=".AsyncActivity"></activity>
+        <activity android:name=".RetrofitActivity"></activity>
+        <activity android:name=".NetworkActivity" />
+        <activity android:name=".AsyncActivity" />
         <activity android:name=".RealmActivity" />
         <activity android:name=".SharedPreferenceActivity" />
         <activity android:name=".TabPager2Activity" />
