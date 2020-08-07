@@ -20,5 +20,7 @@ interface RetrofitService {
         @Body person: PersonFromServer
     ): Call<PersonFromServer>
 
+    @GET("youtube/list/")
+    fun getYoutubeList():Call<ArrayList<Youtube>>
 
 }
